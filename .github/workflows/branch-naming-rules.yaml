@@ -1,0 +1,12 @@
+name: "Enforce Branch Naming Convention"
+on: [push]
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check Branch Name
+      run: |
+        if [[ ! "$GITHUB_REF" =~ ^refs/heads/(feature|bug|exercise)/ ]]; then
+          echo "Branch names must be prefixed with 'feature/', 'bug/', or 'exercise/'."
+          exit 1
+        fi
