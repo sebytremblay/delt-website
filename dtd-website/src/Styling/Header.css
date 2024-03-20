@@ -1,0 +1,55 @@
+.dark-purple-bg {
+  background-color: #543378;
+}
+
+.dark-purple-text {
+  color: #483d8b;
+}
+
+.header-logo.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: auto;
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-logo.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: auto;
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-text-container {
+  font-family: sans-serif, "Roboto";
+  width: 100%;
+  position: ;
+}
+
+.header {
+  padding-bottom: 0px;
+  height: 180px;
+}
+
+.nav-link active {
+  font-family: sans-serif, "Roboto";
+}
+
+.header-content {
+  position: relative;
+  transform: translateY(-50px);
+  z-index: 1;
+}
+
+.navbar {
+  position: relative;
+  z-index: 2;
+}

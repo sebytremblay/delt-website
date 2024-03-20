@@ -1,0 +1,36 @@
+.footer-text-and-image {
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  background-color: transparent;
+  height: auto;
+}
+
+#footer-title {
+  font-family: sans-serif, "Roboto";
+  font-size: 24px;
+  color: white;
+  margin: 5px;
+}
+
+.fa-instagram {
+  color: white;
+  font-size: 45px;
+  margin: 5px;
+}
+
+#company {
+  font-family: sans-serif, "Roboto";
+  font-size: 16px;
+  color: lightgrey;
+  margin: 5px;
+}
+
+#designer-tags {
+  font-family: sans-serif, "Roboto";
+  font-size: 12px;
+  color: lightgrey;
+}
