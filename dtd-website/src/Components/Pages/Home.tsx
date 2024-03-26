@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Homepage.css";
+import "../../Styling/Homepage.css";
 import Calendar from "./Calendar";
 import UpcomingEvents from "./UpcomingEvents";
 
