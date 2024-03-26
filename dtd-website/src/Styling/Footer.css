@@ -1,11 +1,22 @@
-.footer-text-and-image {
+.footer {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  height: 200px;
+  width: 100%;
+}
+
+.footer-logo-instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
 }
 
 .footer-logo {
-  width: 100px;
-  height: auto;
-  background-color: transparent;
+  width: 90px;
   height: auto;
 }
 
@@ -18,8 +29,8 @@
 
 .fa-instagram {
   color: white;
-  font-size: 45px;
-  margin: 5px;
+  font-size: 75px;
+  margin-left: 25px;
 }
 
 #company {

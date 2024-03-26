@@ -9,26 +9,21 @@ const Footer = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col text-center">
-            <div className="footer-text-and-image">
+            <div className="footer-logo-instagram">
               <img
                 src={logoImage}
                 alt="Delta Tau Delta"
                 className="footer-logo mb-2"
               />
-              <div id="footer-title" className="h4 mb-2">
-                Delta Tau Delta
-              </div>
+              <a
+                href="https://www.instagram.com/deltnu/"
+                className="footer-social-media"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
             </div>
-
-            <a
-              href="https://www.instagram.com/deltnu/"
-              className="text-white me-2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
-
             <div id="company">© 2024 Delta Tau Delta Iota Psi Chapter</div>
             <div id="designer-tags">
               Designed & Developed by Vignan Kamarthi and Sebastian Tremblay

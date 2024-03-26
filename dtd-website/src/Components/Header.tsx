@@ -7,42 +7,29 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="dark-purple-bg text-white header">
-      <nav className="navbar navbar-expand-lg navbar-dark">
+      <nav className="navbar navbar-expand navbar-dark">
         <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <div id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a
+                <Link
+                  to="/home"
                   className="nav-link active header-text"
                   aria-current="page"
-                  href="#"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item"></li>
               <li className="nav-item"></li>
               <li className="nav-item dropdown">
-                <a
+                <button
                   className="nav-link dropdown-toggle header-text"
-                  href="#"
-                  role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Menu
-                </a>
+                </button>
                 <ul
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
@@ -65,11 +52,6 @@ const Header = () => {
                   <li>
                     <Link className="dropdown-item" to="/brother-directory">
                       Brother Directory
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/brother-spotlight">
-                      Brother Spotlight
                     </Link>
                   </li>
                   <li>
@@ -96,7 +78,7 @@ const Header = () => {
         />
 
         <div className="header-text-container">
-          <h1>Delta Tau Delta Iota Psi Chapter</h1>
+          <h1>Delta Tau Delta Iota Psi</h1>
           <h4>Northeastern University ΔΤΔ</h4>
           <h2>Unparalleled Excellence</h2>
         </div>
