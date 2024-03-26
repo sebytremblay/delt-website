@@ -6,7 +6,9 @@ jobs:
     steps:
     - name: Check Branch Name
       run: |
-        if [[ ! "$GITHUB_REF" =~ ^refs/heads/(feature|bug|exercise|main)/ ]]; then
-          echo "Branch names must be prefixed with 'feature/', 'bug/', or 'exercise/'."
+        if [[ "$GITHUB_REF" == "refs/heads/main" ]] || [[ "$GITHUB_REF" =~ ^refs/heads/(feature|bug|exercise)/ ]]; then
+          echo "Branch naming convention passed."
+        else
+          echo "Branch names must be 'main' or prefixed with 'feature/', 'bug/', or 'exercise/'."
           exit 1
         fi
