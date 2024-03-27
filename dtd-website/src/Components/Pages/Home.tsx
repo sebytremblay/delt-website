@@ -1,5 +1,5 @@
 import React from "react";
-import "../../Styling/Homepage.css";
+import "../../Styling/Pages/Homepage.css";
 import Calendar from "./Calendar";
 import UpcomingEvents from "./UpcomingEvents";
 
