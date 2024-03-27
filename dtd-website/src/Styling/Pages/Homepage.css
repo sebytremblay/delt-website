@@ -4,10 +4,13 @@
   align-items: flex-start;
 }
 
+<<<<<<< HEAD:dtd-website/src/Styling/Homepage.css
 .calendar {
   flex: 9;
   margin: 20px;
 }
+=======
+>>>>>>> 98d70d958e2b85b4092f2ff676603c6bc582b307:dtd-website/src/Styling/Pages/Homepage.css
 .upcoming-events {
   flex: 2;
   margin: 20px;
@@ -15,6 +18,7 @@
   margin-right: 30px;
 }
 
+<<<<<<< HEAD:dtd-website/src/Styling/Homepage.css
 .calendar-container {
   text-align: center;
 }
@@ -27,6 +31,8 @@
   margin-bottom: 20px;
 }
 
+=======
+>>>>>>> 98d70d958e2b85b4092f2ff676603c6bc582b307:dtd-website/src/Styling/Pages/Homepage.css
 #ue-title {
   font-family: sans-serif, "Roboto";
   font-size: 30px;
