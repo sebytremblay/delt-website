@@ -18,10 +18,10 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100px;
+  width: 7%;
+  min-width: 55px;
   height: auto;
-  background-color: transparent;
-  max-width: 100%;
+  max-height: fit-content;
   transform: translateY(15px);
 }
 
@@ -29,10 +29,10 @@
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100px;
+  width: 7%;
+  min-width: 55px;
   height: auto;
-  background-color: transparent;
-  max-width: 100%;
+  max-height: fit-content;
   transform: translateY(15px);
 }
 
@@ -56,5 +56,5 @@
   z-index: 2;
   width: 100px;
   height: 40px;
-  transform: translateX(30px);
+  transform: translateX(45px);
 }

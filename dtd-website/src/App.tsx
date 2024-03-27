@@ -1,14 +1,29 @@
 // App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 // CSS Imports
-import '../src/Styling/Header.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "../src/Styling/Header.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Component Imports
-import { Header, Footer, Home, AlumniDirectory, BrotherDirectory, EABoard, Housing, Philanthropy, Recruitment } from './Components';
+import {
+  Header,
+  Footer,
+  Home,
+  AlumniDirectory,
+  BrotherDirectory,
+  EABoard,
+  Housing,
+  Philanthropy,
+  Recruitment,
+} from "./Components";
 
 function App() {
   return (
