@@ -1,0 +1,15 @@
+.calendar {
+    flex: 5;
+    margin: 20px;
+}
+
+.calendar-container {
+    text-align: center;
+}
+  
+#calendar-title {
+    font-family: sans-serif, "Roboto";
+    font-size: 48px;
+    color: black;
+    margin-bottom: 20px; /* Adjust as needed */
+}
