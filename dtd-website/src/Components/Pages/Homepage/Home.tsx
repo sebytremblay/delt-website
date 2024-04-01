@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage.css";
+import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage/Homepage.css";
 import Calendar from "./Calendar";
 import UpcomingEvents from "./UpcomingEvents";
 
@@ -10,7 +10,7 @@ const Home = () => {
         <Calendar />
       </div>
       <div className="upcoming-events">
-        <UpcomingEvents timeRange={3} />
+        <UpcomingEvents timeRange={4} />
       </div>
     </div>
   );

@@ -1,0 +1,19 @@
+.home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar {
+  flex: 3;
+  margin: 20px;
+  order: 1;
+}
+
+.upcoming-events {
+  flex: 1;
+  margin: 20px;
+  margin-top: 25px;
+  order: 2;
+  margin-right: 30px;
+}

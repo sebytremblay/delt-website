@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage/UpcomingEvents.css";
 
 interface CalendarEvent {
   id: string;
   summary: string;
+  location?: string;
   start: {
     dateTime?: string;
     date?: string;
@@ -56,18 +58,34 @@ const UpcomingEvents = ({ timeRange }: Props) => {
       <h3 id="ue-title">Upcoming Events</h3>
       <ol>
         {events.map((event: CalendarEvent) => {
-          const start = event.start?.dateTime || event.start?.date || "";
+          const startDateTime = new Date(
+            event.start?.dateTime || event.start?.date || ""
+          );
+          const monthDay = startDateTime.toLocaleDateString("en-US", {
+            month: "numeric",
+            day: "numeric",
+          });
+          const dayOfWeek = startDateTime.toLocaleDateString("en-US", {
+            weekday: "long",
+          });
+          const time = startDateTime.toLocaleTimeString("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+          });
+
           const summary = event.summary || "Untitled";
+          const location = event.location || "TBD";
+
           return (
-            <li key={event.id}>
-              {summary}:{" "}
-              {start
-                ? new Date(start).toLocaleTimeString([], {
-                    hour: "numeric",
-                    minute: "2-digit",
-                    hour12: true,
-                  })
-                : "No start time"}
+            <li key={event.id} className="event-list-item">
+              <span className="event-Name">{summary}: </span>
+              <span className="event-date">{`${monthDay}, ${dayOfWeek}, `}</span>
+              <span className="event-time">{time}.</span>
+              <div className="event-location">
+                {" "}
+                <span id="location">Location:</span> {location}
+              </div>
             </li>
           );
         })}

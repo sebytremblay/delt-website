@@ -1,5 +1,4 @@
 .calendar {
-  flex: 5;
   margin: 20px;
 }
 
@@ -11,5 +10,7 @@
   font-family: sans-serif, "Roboto";
   font-size: 48px;
   color: black;
-  margin-bottom: 20px; /* Adjust as needed */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-decoration: underline;
 }

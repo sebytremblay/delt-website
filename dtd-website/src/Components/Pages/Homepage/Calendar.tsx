@@ -2,7 +2,7 @@ import React from "react";
 import FullCalendar from "@fullcalendar/react";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 import dayGridPlugin from "@fullcalendar/daygrid";
-import "../../Styling/Pages/Calendar.css";
+import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage/Calendar.css";
 
 const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const GOOGLE_CALENDAR_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
