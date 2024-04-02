@@ -28,3 +28,8 @@
 #location {
   font-weight: bold;
 }
+
+.events-list {
+  overflow-y: auto;
+  max-height: 900px;
+}

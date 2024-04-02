@@ -56,40 +56,40 @@ const UpcomingEvents = ({ timeRange }: Props) => {
   return (
     <div className="upcoming-events-container">
       <h3 id="ue-title">Upcoming Events</h3>
-      <ol>
-        {events.map((event: CalendarEvent) => {
-          const startDateTime = new Date(
-            event.start?.dateTime || event.start?.date || ""
-          );
-          const monthDay = startDateTime.toLocaleDateString("en-US", {
-            month: "numeric",
-            day: "numeric",
-          });
-          const dayOfWeek = startDateTime.toLocaleDateString("en-US", {
-            weekday: "long",
-          });
-          const time = startDateTime.toLocaleTimeString("en-US", {
-            hour: "numeric",
-            minute: "2-digit",
-            hour12: true,
-          });
-
-          const summary = event.summary || "Untitled";
-          const location = event.location || "TBD";
-
-          return (
-            <li key={event.id} className="event-list-item">
-              <span className="event-Name">{summary}: </span>
-              <span className="event-date">{`${monthDay}, ${dayOfWeek}, `}</span>
-              <span className="event-time">{time}.</span>
-              <div className="event-location">
-                {" "}
-                <span id="location">Location:</span> {location}
-              </div>
-            </li>
-          );
-        })}
-      </ol>
+      <div className="events-list">
+        <ol>
+          {events.map((event: CalendarEvent) => {
+            const startDateTime = new Date(
+              event.start?.dateTime || event.start?.date || ""
+            );
+            const monthDay = startDateTime.toLocaleDateString("en-US", {
+              month: "numeric",
+              day: "numeric",
+            });
+            const dayOfWeek = startDateTime.toLocaleDateString("en-US", {
+              weekday: "long",
+            });
+            const time = startDateTime.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+              hour12: true,
+            });
+            const summary = event.summary || "Untitled";
+            const location = event.location || "TBD";
+            return (
+              <li key={event.id} className="event-list-item">
+                <span className="event-Name">{summary}: </span>
+                <span className="event-date">{`${monthDay}, ${dayOfWeek}, `}</span>
+                <span className="event-time">{time}.</span>
+                <div className="event-location">
+                  {" "}
+                  <span id="location">Location:</span> {location}
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
     </div>
   );
 };
