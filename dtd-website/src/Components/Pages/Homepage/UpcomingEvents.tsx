@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage/UpcomingEvents.css";
+import "../../../Styling/Pages/Homepage/UpcomingEvents.css";
 
 interface CalendarEvent {
   id: string;
