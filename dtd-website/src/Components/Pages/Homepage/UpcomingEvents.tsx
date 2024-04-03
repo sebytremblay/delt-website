@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "/Users/vkamarthi24/Desktop/Work/College Work/delt-website/dtd-website/src/Styling/Pages/Homepage/UpcomingEvents.css";
-
+import "../../../Styling/Pages/Homepage/UpcomingEvents.css";
 interface CalendarEvent {
   id: string;
   summary: string;
@@ -60,7 +59,7 @@ const UpcomingEvents = ({ timeRange }: Props) => {
         <ol>
           {events.map((event: CalendarEvent) => {
             const startDateTime = new Date(
-              event.start?.dateTime || event.start?.date || ""
+              event.start?.dateTime || event.start?.date || "TBD"
             );
             const monthDay = startDateTime.toLocaleDateString("en-US", {
               month: "numeric",

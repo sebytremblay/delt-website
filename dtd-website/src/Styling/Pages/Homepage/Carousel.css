@@ -1,0 +1,19 @@
+.homepage-carousel .carousel-item {
+  background-image: url("../../../Materials/CarouselBG.jpg"); /* Replace 'pattern-image.jpg' with the URL or path to your pattern image */
+  background-size: cover; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+  z-index: 1;
+}
+
+.homepage-carousel .carousel-item img {
+  max-height: 80vh;
+  object-fit: contain;
+  width: auto;
+  z-index: 2;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2;
+  pointer-events: auto;
+}
