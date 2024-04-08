@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../../Styling/Pages/Homepage/UpcomingEvents.css";
+
 interface CalendarEvent {
   id: string;
   summary: string;
@@ -10,26 +11,60 @@ interface CalendarEvent {
   };
 }
 
+interface EventItemProps {
+  event: CalendarEvent;
+}
+
+const EventItem: React.FC<EventItemProps> = ({ event }) => {
+  const startDateTime = new Date(
+    event.start?.dateTime || event.start?.date || "TBD"
+  );
+  const monthDay = startDateTime.toLocaleDateString("en-US", {
+    month: "numeric",
+    day: "numeric",
+  });
+  const dayOfWeek = startDateTime.toLocaleDateString("en-US", {
+    weekday: "long",
+  });
+  const time = startDateTime.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+  const summary = event.summary || "Untitled";
+  const location = event.location || "TBD";
+
+  return (
+    <li className="event-list-item">
+      <span className="event-name">{summary}: </span>
+      <span className="event-date">{`${monthDay}, ${dayOfWeek}, `}</span>
+      <span className="event-time">{time}.</span>
+      <div className="event-location">
+        <span id="location">Location:</span> {location}
+      </div>
+    </li>
+  );
+};
+
 interface Props {
   timeRange: number; // Time range in months
 }
 
-const UpcomingEvents = ({ timeRange }: Props) => {
+const UpcomingEvents: React.FC<Props> = ({ timeRange }) => {
   const [events, setEvents] = useState<CalendarEvent[]>([]);
-
   const apiKey = process.env.REACT_APP_GOOGLE_API_KEY!;
   const googleCalendarId = process.env.REACT_APP_GOOGLE_CALENDAR_ID!;
 
   useEffect(() => {
-    const fetchEvents = async () => {
+    (async () => {
       if (!apiKey || !googleCalendarId) {
         console.error("API key or Calendar ID is undefined");
         return;
       }
 
-      const timeMin = new Date().toISOString(); // Now
+      const timeMin = new Date().toISOString();
       const timeMaxDate = new Date();
-      timeMaxDate.setMonth(timeMaxDate.getMonth() + timeRange); // Set months ahead based on timeRange
+      timeMaxDate.setMonth(timeMaxDate.getMonth() + timeRange);
       const timeMax = timeMaxDate.toISOString();
 
       const eventsUrl = `https://www.googleapis.com/calendar/v3/calendars/${encodeURIComponent(
@@ -38,18 +73,19 @@ const UpcomingEvents = ({ timeRange }: Props) => {
 
       try {
         const response = await fetch(eventsUrl);
-        const data = await response.json();
-        if (Array.isArray(data.items)) {
-          setEvents(data.items as CalendarEvent[]);
-        } else {
-          setEvents([]); // Sets an empty array if data.items is not an array
-        }
+        if (!response.ok) throw new Error("Failed to fetch events.");
+        const { items = [] } = await response.json();
+        setEvents(
+          items.map((item: Partial<CalendarEvent>) => ({
+            ...item,
+            start: item.start || {},
+          })) as CalendarEvent[]
+        );
       } catch (error) {
         console.error("Error fetching events:", error);
-        setEvents([]); // Also set to an empty array in case of an error
+        setEvents([]);
       }
-    };
-    fetchEvents();
+    })();
   }, [apiKey, googleCalendarId, timeRange]);
 
   return (
@@ -57,36 +93,9 @@ const UpcomingEvents = ({ timeRange }: Props) => {
       <h3 id="ue-title">Upcoming Events</h3>
       <div className="events-list">
         <ol>
-          {events.map((event: CalendarEvent) => {
-            const startDateTime = new Date(
-              event.start?.dateTime || event.start?.date || "TBD"
-            );
-            const monthDay = startDateTime.toLocaleDateString("en-US", {
-              month: "numeric",
-              day: "numeric",
-            });
-            const dayOfWeek = startDateTime.toLocaleDateString("en-US", {
-              weekday: "long",
-            });
-            const time = startDateTime.toLocaleTimeString("en-US", {
-              hour: "numeric",
-              minute: "2-digit",
-              hour12: true,
-            });
-            const summary = event.summary || "Untitled";
-            const location = event.location || "TBD";
-            return (
-              <li key={event.id} className="event-list-item">
-                <span className="event-Name">{summary}: </span>
-                <span className="event-date">{`${monthDay}, ${dayOfWeek}, `}</span>
-                <span className="event-time">{time}.</span>
-                <div className="event-location">
-                  {" "}
-                  <span id="location">Location:</span> {location}
-                </div>
-              </li>
-            );
-          })}
+          {events.map((event) => (
+            <EventItem key={event.id} event={event} />
+          ))}
         </ol>
       </div>
     </div>

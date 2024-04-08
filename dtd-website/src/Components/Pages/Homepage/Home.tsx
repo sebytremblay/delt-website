@@ -7,9 +7,6 @@ import UpcomingEvents from "./UpcomingEvents";
 const Home = () => {
   return (
     <div className="home-layout">
-      <div className="homepage-carousel">
-        <Carousel />
-      </div>
       <div className="schedule-container">
         <div className="calendar">
           <Calendar />
@@ -17,6 +14,9 @@ const Home = () => {
         <div className="upcoming-events">
           <UpcomingEvents timeRange={4} />
         </div>
+      </div>
+      <div className="homepage-carousel">
+        <Carousel />
       </div>
     </div>
   );
