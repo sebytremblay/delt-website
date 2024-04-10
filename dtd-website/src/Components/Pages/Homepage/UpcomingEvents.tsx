@@ -92,7 +92,7 @@ const UpcomingEvents: React.FC<Props> = ({ timeRange }) => {
     <div className="upcoming-events-container">
       <h3 id="ue-title">Upcoming Events</h3>
       <div className="events-list">
-        <ol>
+        <ol className="ordered-list">
           {events.map((event) => (
             <EventItem key={event.id} event={event} />
           ))}
