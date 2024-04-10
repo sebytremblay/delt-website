@@ -37,6 +37,11 @@
   margin-bottom: 15px;
 }
 
+<<<<<<< Updated upstream:dtd-website/src/Styling/Pages/Homepage.css
 .event-name {
   text-decoration: underline;
+=======
+#location {
+  font-weight: bold;
+>>>>>>> Stashed changes:dtd-website/src/Styling/Pages/Homepage/UpcomingEvents.css
 }
