@@ -10,7 +10,7 @@
   background-color: #543378;
   color: #483d8b;
   text-align: center;
-  height: 200px;
+  height: 150px;
   position: sticky;
 }
 
@@ -18,22 +18,22 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100px;
+  width: 7%;
+  min-width: 100px;
   height: auto;
-  background-color: transparent;
-  max-width: 100%;
-  transform: translateY(15px);
+  max-height: fit-content;
+  transform: translateY(-40px);
 }
 
 .header-logo.bottom-right {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100px;
+  width: 7%;
+  min-width: 100px;
   height: auto;
-  background-color: transparent;
-  max-width: 100%;
-  transform: translateY(15px);
+  max-height: fit-content;
+  transform: translateY(-40px);
 }
 
 .header-text-container {
@@ -47,14 +47,14 @@
 
 .header-content {
   position: relative;
-  transform: translateY(-30px);
+  transform: translateY(-50px);
   z-index: 1;
 }
 
 .navbar {
   position: fixed;
-  z-index: 2;
+  z-index: 10;
   width: 100px;
   height: 40px;
-  transform: translateX(30px);
+  transform: translateX(100px);
 }
