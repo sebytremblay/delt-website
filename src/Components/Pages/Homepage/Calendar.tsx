@@ -8,9 +8,6 @@ const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const GOOGLE_CALENDAR_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
 
 const Calendar = () => {
-  console.log(`API_KEY: ${API_KEY ? API_KEY : "undefined"}`);
-  console.log(`GOOGLE_CALENDAR_ID: ${GOOGLE_CALENDAR_ID ? GOOGLE_CALENDAR_ID : "undefined"}`);
-
   return (
     <div className="calendar-container">
       <h2 id="calendar-title">Calendar</h2>
