@@ -27,7 +27,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/delt-website">
       <Header />
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
