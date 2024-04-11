@@ -26,7 +26,7 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://sebytremblay.github.io/delt-website/home",
+  "homepage": "https://sebytremblay.github.io/delt-website",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
