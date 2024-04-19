@@ -1,0 +1,75 @@
+.brotherhood-spotlight {
+  display: flex;
+  flex-direction: horizontal;
+  position: relative;
+}
+
+/* Carousel CSS */
+.brotherhood-spotlight .spotlight-carousel {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.brotherhood-spotlight .carousel-item {
+  background-image: url("../../../Materials/CarouselBG.jpg");
+  background-size: contain; /* Ensure the background image covers the entire element */
+  background-position: center; /* Center the background image */
+  z-index: 0;
+  justify-content: center; /* Center the inner image horizontally */
+  align-items: center; /* Center the inner image vertically */
+  height: 50vh;
+}
+.brotherhood-spotlight .carousel-item img {
+  height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  display: block; /* Display block instead of flex for images */
+  margin: auto; /* Center the image in the block container */
+  z-index: 0;
+}
+.brotherhood-spotlight .carousel-control-prev,
+.brotherhood-spotlight .carousel-control-next {
+  z-index: 1; /* Above the item and image z-index */
+  pointer-events: auto;
+}
+
+/* Description CSS */
+
+.spotlight-description-container {
+  flex: 3;
+  width: 80vw; /* Adjust width as needed */
+  height: 50vh; /* Fixed height for the carousel */
+  position: relative;
+}
+
+.spotlight-text {
+  margin: 3%;
+  font-family: sans-serif, "Roboto";
+  max-height: 47.5vh;
+  overflow-y: auto;
+}
+
+#title {
+  font-family: sans-serif, "Roboto";
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.spotlight-description {
+  font-family: sans-serif, "Roboto";
+  font-size: 30px;
+  color: black;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.spotlight-details {
+  font-family: sans-serif, "Roboto";
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5%;
+  text-align: left;
+}

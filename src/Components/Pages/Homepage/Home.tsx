@@ -3,6 +3,7 @@ import "../../../Styling/Pages/Homepage/Home.css";
 import Calendar from "./Calendar";
 import Carousel from "./Carousel";
 import UpcomingEvents from "./UpcomingEvents";
+import Spotlight from "./Spotlight";
 
 const Home = () => {
   // Calculate and return the aspect ratio of the whole window
@@ -16,7 +17,7 @@ const Home = () => {
     (aspectRatio: number) => {
       const basePercentage = 0.95; // Base height percentage
       const heightAdjustmentFactor = 0.05; // Height adjustment per increment
-      const aspectRatioStep = 0.25; // Aspect ratio incrememnt
+      const aspectRatioStep = 0.25; // Aspect ratio increment
       const maxAspectRatio = 2; // Maximum aspect ratio
 
       let adjustedHeightPercentage =
@@ -90,6 +91,7 @@ const Home = () => {
       <div className="homepage-carousel">
         <Carousel />
       </div>
+      <Spotlight />
     </div>
   );
 };
