@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.fc-dayGridMonth-view {
+  max-height: 57.5vh;
+}
+
 #calendar-title {
   font-family: sans-serif, "Roboto";
   font-size: 48px;
