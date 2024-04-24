@@ -20,6 +20,7 @@
   left: 0;
   width: 7%;
   min-width: 100px;
+  max-width: 120px;
   height: auto;
   max-height: fit-content;
   transform: translateY(-40px);
@@ -31,6 +32,7 @@
   right: 0;
   width: 7%;
   min-width: 100px;
+  max-width: 120px;
   height: auto;
   max-height: fit-content;
   transform: translateY(-40px);
