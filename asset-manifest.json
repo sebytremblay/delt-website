@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/delt-website/static/css/main.d110ddf9.css",
-    "main.js": "/delt-website/static/js/main.55dd21bf.js",
+    "main.css": "/delt-website/static/css/main.f4b68662.css",
+    "main.js": "/delt-website/static/js/main.f231a221.js",
     "static/js/453.9a13deb2.chunk.js": "/delt-website/static/js/453.9a13deb2.chunk.js",
     "static/media/Carousel1.png": "/delt-website/static/media/Carousel1.e8f93651270007e72df4.png",
     "static/media/Carousel4.png": "/delt-website/static/media/Carousel4.87030e57028757b00623.png",
     "static/media/Carousel3.png": "/delt-website/static/media/Carousel3.49d041aae5b8ca5002e4.png",
     "static/media/Carousel2.png": "/delt-website/static/media/Carousel2.ba50ece0e870af6aad34.png",
+    "static/media/Spotlight3.png": "/delt-website/static/media/Spotlight3.15356784bb6846d95319.png",
+    "static/media/Spotlight2.png": "/delt-website/static/media/Spotlight2.98fd445eea464a6ed141.png",
     "static/media/fa-solid-900.ttf": "/delt-website/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/header-logo.png": "/delt-website/static/media/header-logo.584dd09c74ec6e6ad417.png",
     "static/media/CarouselBG.jpg": "/delt-website/static/media/CarouselBG.a0ee5ff9032b3832ff6a.jpg",
@@ -14,16 +16,17 @@
     "static/media/fa-solid-900.woff2": "/delt-website/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/fa-brands-400.woff2": "/delt-website/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
     "static/media/fa-regular-400.ttf": "/delt-website/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/Spotlight1.png": "/delt-website/static/media/Spotlight1.bd9f39df53fa6fc1d939.png",
     "static/media/fa-regular-400.woff2": "/delt-website/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
     "static/media/fa-v4compatibility.ttf": "/delt-website/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/delt-website/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/delt-website/index.html",
-    "main.d110ddf9.css.map": "/delt-website/static/css/main.d110ddf9.css.map",
-    "main.55dd21bf.js.map": "/delt-website/static/js/main.55dd21bf.js.map",
+    "main.f4b68662.css.map": "/delt-website/static/css/main.f4b68662.css.map",
+    "main.f231a221.js.map": "/delt-website/static/js/main.f231a221.js.map",
     "453.9a13deb2.chunk.js.map": "/delt-website/static/js/453.9a13deb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d110ddf9.css",
-    "static/js/main.55dd21bf.js"
+    "static/css/main.f4b68662.css",
+    "static/js/main.f231a221.js"
   ]
 }
