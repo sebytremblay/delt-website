@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/delt-website/static/css/main.f4b68662.css",
+    "main.css": "/delt-website/static/css/main.d63b199d.css",
     "main.js": "/delt-website/static/js/main.f231a221.js",
     "static/js/453.9a13deb2.chunk.js": "/delt-website/static/js/453.9a13deb2.chunk.js",
     "static/media/Carousel1.png": "/delt-website/static/media/Carousel1.e8f93651270007e72df4.png",
@@ -21,12 +21,12 @@
     "static/media/fa-v4compatibility.ttf": "/delt-website/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/delt-website/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/delt-website/index.html",
-    "main.f4b68662.css.map": "/delt-website/static/css/main.f4b68662.css.map",
+    "main.d63b199d.css.map": "/delt-website/static/css/main.d63b199d.css.map",
     "main.f231a221.js.map": "/delt-website/static/js/main.f231a221.js.map",
     "453.9a13deb2.chunk.js.map": "/delt-website/static/js/453.9a13deb2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4b68662.css",
+    "static/css/main.d63b199d.css",
     "static/js/main.f231a221.js"
   ]
 }
